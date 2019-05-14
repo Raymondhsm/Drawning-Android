@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="program_category_spinner">
+        <item>全部</item>
+        <item>情绪管理</item>
+        <item>人际沟通</item>
+        <item>自我成长</item>
+        <item>心理科普</item>
+        <item>恋爱婚姻</item>
+        <item>职场管理</item>
+        <item>亲子家庭</item>
+        <item>课程讲座</item>
+    </string-array>
+
+    <string-array name="article_category_spinner">
+        <item>全部</item>
+        <item>自我成长</item>
+        <item>情绪管理</item>
+        <item>压力调节</item>
+        <item>人际沟通</item>
+        <item>情感故事</item>
+        <item>奋斗故事</item>
+        <item>职场管理</item>
+        <item>亲子家庭</item>
+        <item>心理科普</item>
+    </string-array>
+</resources>

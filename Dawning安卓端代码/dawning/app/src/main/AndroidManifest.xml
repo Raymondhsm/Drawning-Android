@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dawn.dawning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.RadioHomeActivity"
+            android:label="@string/title_activity_radio_home"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.dawn.dawning.ACTION_RADIO_HOME" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RadioDetailActivity"
+            android:label="@string/title_activity_radio_detail"
+            android:theme="@style/AppTheme.ImageTransparentStatusBar">
+            <intent-filter>
+                <action android:name="com.dawn.dawning.ACTION_RADIO_DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProgramCategoryActivity"
+            android:parentActivityName=".activity.RadioHomeActivity"
+            android:label="@string/title_activity_program_category"
+            android:theme="@style/AppTheme.ColorStatusBar">
+            <intent-filter>
+                <action android:name="com.dawn.dawning.ACTION_PROGRAM_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RadioDiscoverActivity"
+            android:parentActivityName=".activity.RadioHomeActivity"
+            android:label="@string/title_activity_radio_discover"
+            android:theme="@style/AppTheme.ColorStatusBar">
+            <intent-filter>
+                <action android:name="com.dawn.dawning.ACTION_RADIO_DISCOVER" />
+            </intent-filter>
+        </activity>
+
+        //HSM
+        <activity android:name=".activity.setup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.moodReport" />
+        <activity android:name=".activity.meditationReport" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".activity.login" />
+
+        <activity
+            android:name=".activity.ProgramMixActivity"
+            android:label="节目收藏"
+            android:theme="@style/AppTheme.ColorStatusBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="com.dawn.dawning.ACTION_PROGRAM_MIX" />
+            </intent-filter>
+        </activity>
+
+
+        //Diary
+        <activity android:name=".activity.DiaryHomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.UpdateDiaryActivity"/>
+        <activity android:name=".activity.AddDiaryActivity"/>
+
+
+
+        //Think
+
+
+    </application>
+
+
+
+</manifest>

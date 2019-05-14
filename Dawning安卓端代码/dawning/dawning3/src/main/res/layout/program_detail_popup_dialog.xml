@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bottom_dialog"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dialog_item_padding">
+
+    <TextView
+        android:id="@+id/dialog_program_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="节目名:明天会更好"
+        android:textColor="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/action_plat_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_border"
+        android:drawableLeft="@android:drawable/ic_media_next"
+
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="@dimen/dialog_item_padding"
+        android:paddingBottom="@dimen/dialog_item_padding"
+        android:text="下一首播放"
+        android:textSize="@dimen/radio_name_size" />
+
+    <Button
+        android:id="@+id/action_favorite_program"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_border"
+        android:drawableLeft="@drawable/ic_favorite"
+        android:drawablePadding="8dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="@dimen/dialog_item_padding"
+        android:paddingBottom="@dimen/dialog_item_padding"
+        android:text="收藏节目"
+        android:textSize="@dimen/radio_name_size" />
+
+
+</LinearLayout>

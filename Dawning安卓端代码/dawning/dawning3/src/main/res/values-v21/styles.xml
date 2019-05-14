@@ -1,0 +1,23 @@
+<resources>
+    <!--<style name="AppTheme.NoActionBar">-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--</style>-->
+    <style name="AppTheme.ImageTransparentStatusBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.ColorStatusBar">
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <item name="android:statusBarColor">@color/dawning_color_pur</item>
+    </style>
+    <!--<style name="AppTheme.ColorTransparentStatusBar">-->
+        <!--&lt;!&ndash;<item name="android:statusBarColor">?attr/</item>&ndash;&gt;-->
+    <!--</style>-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+</resources>

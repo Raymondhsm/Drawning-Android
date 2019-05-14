@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9959ab</color>
+    <color name="colorPrimaryDark">#9959ab</color>
+    <color name="colorAccent">#9959ab</color>
+
+
+
+
+    //diary
+        <color name="gray">#bbafb4</color>
+        <color name="black">#343232</color>
+        <color name="black_semi_transparent">#B2000000</color>
+        <color name="background">#e5e5e5</color>
+        <color name="half_black">#808080</color>
+        <color name="white">#fafafa</color>
+        <color name="white_pressed">#f1f1f1</color>
+        <color name="pink">#e91e63</color>
+        <color name="pink_pressed">#ec407a</color>
+        <color name="blue_semi_transparent">#805677fc</color>
+        <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    //HSM
+
+    <color name="switchColor">#3fff21</color>
+    <color name="colorLightGray">#e5e4e4</color>
+    <color name="colorMian">#6bb9fd</color>
+    <color name="mixBorderYellow">#f2ff3a</color>
+    <color name="DawningColor">#ffd903</color>
+    <color name="dawning_color_main">#9959ab</color>
+    <color name="dawning_color_blue">#9b97e8</color>
+    <color name="dawning_color_pur">#654270</color>
+    <color name="dawning_coloe_white">#b3b5ff</color>
+
+    //XST
+    <color name="program_detail_item_text">#bfbfbf</color>
+    <color name="divider">#40bfbfbf</color>
+    <color name="grey_000">#FFFFFF</color>
+    <color name="grey_050">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+</resources>

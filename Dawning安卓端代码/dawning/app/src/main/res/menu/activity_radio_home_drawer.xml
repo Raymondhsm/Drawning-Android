@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_mix"
+            android:icon="@drawable/dawning_ic_list"
+            android:title="@string/nav_my_mix" />
+        <item
+            android:id="@+id/nav_meditation_record"
+            android:icon="@drawable/dawning_ic_think"
+            android:title="@string/nav_meditation_record" />
+        <item
+            android:id="@+id/nav_mood_curve"
+            android:icon="@drawable/dwaning_ic_mood"
+            android:title="@string/nav_mood_curve" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/dawning_ic_setting"
+            android:title="@string/action_settings" />
+    </group>
+
+</menu>

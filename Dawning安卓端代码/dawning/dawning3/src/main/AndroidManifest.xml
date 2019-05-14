@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dawn.dawning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="com.dawn.dawning.activity.login">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name = "com.dawn.dawning.activity.login" />
+
+                　
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name=".activity.RadioHomeActivity"
+            android:label="@string/title_activity_radio_home"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name=".activity.RadioDetailActivity"
+            android:label="@string/title_activity_radio_detail"
+            android:theme="@style/AppTheme.ImageTransparentStatusBar">
+            <intent-filter>
+                <action android:name="com.dawn.dawning.ACTION_RADIO_DETAIL" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProgramCategoryActivity"
+            android:parentActivityName=".activity.RadioHomeActivity"
+            android:label="@string/title_activity_program_category"
+            android:theme="@style/AppTheme.ColorStatusBar">
+            <intent-filter>
+                <action android:name="com.dawn.dawning.ACTION_PROGRAM_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RadioDiscoverActivity"
+            android:parentActivityName=".activity.RadioHomeActivity"
+            android:label="@string/title_activity_radio_discover"
+            android:theme="@style/AppTheme.ColorStatusBar">
+            <intent-filter>
+                <action android:name="com.dawn.dawning.ACTION_RADIO_DISCOVER" />
+            </intent-filter>
+        </activity>
+
+        //HSM
+        <activity android:name=".activity.setup"/>
+        <activity android:name=".activity.moodReport" />
+        <activity android:name=".activity.meditationReport" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".activity.ProgramMixActivity"
+            android:theme="@style/AppTheme.ColorStatusBar"/>
+
+
+        //Diary
+        <activity android:name=".activity.DiaryHomeActivity"/>
+        <activity android:name=".activity.UpdateDiaryActivity"/>
+        <activity android:name=".activity.AddDiaryActivity"/>
+
+
+
+        //Think
+        <activity android:name=".activity.ThinkHomeActivity"/>
+        <activity android:name=".activity.LocalMusicActivity"/>
+
+        <service
+            android:name=".diaryh.MusicService">
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="startnew"/>
+                <action android:name="changed"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".activity.ArticleHomeActivity"
+            android:label="文章主页">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.BaseActivity" />
+        <activity
+            android:name=".ui.NewActivity"
+            android:label="@string/title_activity_new"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.NoteActivity"
+            android:label="@string/title_activity_note" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="我的文章">
+
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.dawn.dawning.matisse.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+    </application>
+
+</manifest>

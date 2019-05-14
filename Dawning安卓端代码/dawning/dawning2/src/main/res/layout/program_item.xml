@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/content_radio_home">
+
+    <ImageView
+        android:id="@+id/image_program"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/program_image" />
+
+    <TextView
+        android:id="@+id/text_program_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toEndOf="@+id/image_program"
+        app:layout_constraintTop_toTopOf="@+id/image_program"
+        tools:text="节目名" />
+
+    <TextView
+        android:id="@+id/text_radio_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/image_program"
+        app:layout_constraintStart_toStartOf="@+id/text_program_name"
+        tools:text="电台名" />
+
+    <ImageButton
+        android:id="@+id/image_more"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="@+id/image_program"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/image_program"
+        app:srcCompat="@drawable/ic_more" />
+</android.support.constraint.ConstraintLayout>
